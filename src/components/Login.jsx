@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import './login.css';
+import { useNavigate } from 'react-router-dom';
+import Main from './Main';
 
 function Login() {
+    const navigate = useNavigate();
     const bgRef = useRef(null);
     const headingRef = useRef(null);
 
@@ -34,19 +37,21 @@ function Login() {
     };
 
     const handleLogin = () => {
-        const loginEmail = document.getElementById("lemail").value;
-        const loginPassword = document.getElementById("lpassword").value;
-        console.log("Login Email:", loginEmail);
-        console.log("Login Password:", loginPassword);
+        navigate('/main');
+        // const loginEmail = document.getElementById("lemail").value;
+        // const loginPassword = document.getElementById("lpassword").value;
+        // console.log("Login Email:", loginEmail);
+        // console.log("Login Password:", loginPassword);
     };
 
     const handleRegister = () => {
-        const registerName = document.getElementById("name").value;
-        const registerEmail = document.getElementById("email").value;
-        const registerPassword = document.getElementById("password").value;
-        console.log("Register Name:", registerName);
-        console.log("Register Email:", registerEmail);
-        console.log("Register Password:", registerPassword);
+        navigate('/main');
+        // const registerName = document.getElementById("name").value;
+        // const registerEmail = document.getElementById("email").value;
+        // const registerPassword = document.getElementById("password").value;
+        // console.log("Register Name:", registerName);
+        // console.log("Register Email:", registerEmail);
+        // console.log("Register Password:", registerPassword);
     };
 
     return (

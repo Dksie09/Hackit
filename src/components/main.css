@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: radial-gradient(#0D0D0D, #0D0D0D)
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+#canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0D0D0D;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    background: #282525;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s;
+    cursor: pointer;
+}
+
+nav.black ul {
+    background: #0D0D0D;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #62626268;
+    padding: 30px;
+    padding-bottom: 40px;
+    z-index: 1000;
+    margin-top: 36px;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.slogan {
+    margin: 0;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+}
+
+.linkform {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.enterlink {
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.linkbox {
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.scanbtn {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: #0D0D0D;
+    color: #fff;
+    cursor: pointer;
+}
+
+.scanbtn:hover {
+    color: #0d0d0d;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        font-size: 40px;
+    }
+
+    .enterlink {
+        font-size: 20px;
+    }
+
+    .linkbox {
+        font-size: 10px;
+    }
+
+    .scanbtn {
+        font-size: 15px;
+    }
+
+    nav ul li {
+        padding: 15px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .logo {
+        margin: 12px 30px;
+    }
+}
